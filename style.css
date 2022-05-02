@@ -1,186 +1,248 @@
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+html {
+  display: flex;
+  box-sizing: border-box;
+  margin-top: 30px;
+  justify-content: center;
+}
+
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-body {
-  line-height: 1;
-}
-ol,
-ul {
-  list-style: none;
-}
-blockquote,
-q {
-  quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
+  box-sizing: inherit;
 }
 
-/* RESET CSS */
-
-/* SHOPPING TRACKER  */
-#header-title {
-  font-family: "Merriweather", serif;
-  margin-top: 60px;
-  color: #d06650;
+#shop-list,
+#shop-add {
   display: flex;
-  justify-content: center;
-}
-
-#header-title h1 {
-  color: #d06650;
-  display: flex;
-  justify-content: center;
-}
-
-#add-item{
-    display: flex;
-    justify-content: center;
-    font-family: "Merriweather", serif;
-}
-
-/* IN-CART ITEMS DIV  */
-#container-1 {
-  display: flex;
-  justify-content: center;
-  font-family: "Merriweather", serif;
-  margin-top: 50px;
-}
-
-/* ADD ITEMS CONTAINER */
-#container-2 {
-  display: flex;
-  justify-content: center;
-  font-family: "Merriweather", serif;
-  padding: 20px;
-  background-color: red;
-  max-width: 600px;
+  flex-wrap: wrap;
+  background: #3feee6;
+  border: 1px solid grey;
+  padding: 30px;
+  width: 700px;
   margin-left: auto;
   margin-right: auto;
   border-radius: 10px;
 }
 
-/* ADD ITEM INPUT  */
-#shop-item {
-  width: 300px;
-  height: 50px;
-  border-radius: 10px;
-  font-family: "Merriweather", serif;
-}
-
-/* ADD BUTTON  */
+.item-row,
+.item-name,
+.item-del,
+.item-ok,
+#shop-item,
 #shop-add-btn {
-  border-radius: 10px;
-  margin-left: 5px;
-  height: 50px;
-  font-family: "Merriweather", serif;
+  box-sizing: border-box;
+  border: 0;
+  font-size: 20px;
+  height: 55px;
+  /* border-radius: 50px 50px; */
+}
+.item-name,
+#shop-item {
+  background: #fff;
+  padding: 10px;
+}
+.item-del,
+.item-ok,
+#shop-add-btn {
+  cursor: pointer;
+  color: white;
 }
 
+/* SHOPPING LIST */
+.item-row {
+  display: flex;
+  width: 100%;
+  margin: 5px 0;
+}
+.item-name {
+  width: 60%;
+}
+.item-name.item-got {
+  background: #cafafe;
+}
+.item-name.item-got:before {
+  content: "\02713";
+  margin-right: 5px;
+  font-weight: bolder;
+  color: #19d14a;
+}
 
+.item-del,
+.item-ok {
+  width: 20%;
+  height: 55px;
+}
+.item-del {
+  background: #fc4445;
+  font-size: 23px;
+}
+.item-ok {
+  background: #5a75d6;
+  font-size: 23px;
+}
+
+/* ADD ITEM */
+#shop-item {
+  width: 75%;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+#shop-add-btn {
+  width: 25%;
+  background: #5a75d6;
+  font-size: 23px;
+}
+
+h1 {
+  display: flex;
+  font-family: 'Roboto Slab', serif;
+  justify-content: center;
+  color: #5a75d6;
+}
+
+h2{
+  display: flex;
+  justify-content: center;
+  color: #5a75d6;
+}
+
+h2.temp{
+  color: #fc4445;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+  color: #fc4445;
+  font-family: 'Roboto Slab', serif;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.search-bar {
+  margin-top: 20px;
+}
+
+.card {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  margin-left: 130px;
+}
+
+h2.city {
+  margin-top: 10px;
+}
+
+input.search-bar {
+  height: 1.8em;
+  width: 15em;
+  border-radius: 25px;
+  padding: 0.8em;
+  cursor: pointer;
+  outline: none;
+}
+
+button#button {
+  border-radius: 50%;
+  height: 1.8em;
+  width: 1.8em;
+}
+
+button:hover {
+  background: rgb(222, 208, 208);
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+div.card {
+  background-color: #3feee6;
+  border-radius: 15px;
+  border: 1px solid grey;
+}
+
+.calculator {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 20% 80%;
+  margin-bottom: 50px;
+  grid-template-areas:
+    "scn scn"
+    "calc calc";
+}
+
+.calculator-screen {
+  display: grid;
+  grid-area: scn;
+  width: 100%;
+  height: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #5a75d6;
+  border-color: rgb(11, 11, 228);
+  border-radius: 10px;
+  text-align: right;
+  padding-right: 20px;
+  padding-left: 10px;
+  font-size: 3rem;
+  color: azure;
+}
+
+.calculator-keys {
+  margin-top: 30px;
+  position: relative;
+  padding-top: 20px;
+  grid-gap: 3px;
+  padding: 3px;
+  grid-area: calc;
+  display: grid;
+  height: 100%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  grid-template-areas:
+    "row1 row1 row1 row1"
+    "row2 row2 row2 row2"
+    "row3 row3 row3 row3"
+    "row4 row4 row4 row4"
+    "row5 row5 row5 row5";
+}
+
+.calculator-keys:active {
+  top: 1px;
+}
+
+.all-clear {
+  background-color: #fc4445;
+}
+
+.all-clear:hover {
+  background-color: #3feee6;
+  transition: 0.2s ease-in-out;
+}
+
+#all-clear {
+  position: relative;
+}
+
+#all-clear:active {
+  top: 1px;
+}
+
+#equal-sign {
+  display: grid;
+  grid-area: row5;
+}
+
+#equal-sign:hover{
+  background-color: #3feee6;
+  transition: 0.2s ease-in-out;
+}

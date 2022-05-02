@@ -1,0 +1,109 @@
+<!-- WEATHER SEARCH DIV -->
+<!-- <div class="weather-card">
+        <div class="search">
+            <input 
+            type="text" id="search-bar" placeholder="Enter City">
+            <button id="search-button">
+                <i class="fa-solid fa-magnifying-glass">
+                </i>
+            </button>
+        </div>
+    </div> -->
+<!-- WEATHER INFORMATION -->
+<!-- <div class="weather-container">
+    <div class="temp-card" id="weather">
+        <h2 class="temp-card" id="city">Weather in Denver</h2>
+    </div>
+    <div class="temp-card" id="temp"><h2>51&#8457;</h2>
+        <img class="temp-card" src="https://openweathermap.org/img/wn/04n.png" alt="" id="icon">
+    </div>
+    <div class="temp-card" id="description">Cloudy</div>
+    <div class="temp-card" id="humidity">Humidity: 60&#37;</div>
+    <div class="temp-card" id="wind">Wind Speed: 6.2 km/h</div>
+    </div> -->
+
+    <!-- // let weather = {
+        //   apiKey : "265732dbce1159562334300105f7e853",
+        //   fetchWeather : function (city) {
+        //     fetch (
+        //       "https://api.openweathermap.org/data/2.5/weather?q="
+        //       + city 
+        //       + "&units=imperial&appid="
+        //       + this.apiKey
+        //       )
+        //     .then((res) => res.json())
+        //     .then((data) => this.displayWeather(data));
+        //   },
+        //   displayWeather : function (data) {
+        //     const { name } = data;
+        //     const { temp } = data.main;
+        //     const { icon, description } = data.weather[0];
+        //     const { speed } = data.wind;
+        //     console.log(name, icon, description, temp, humidity, speed);
+        
+        //     document.querySelector("#city").innerText = "Weather in " + name;
+        //     document.querySelector("#temp").innerText = temp + " °F";
+        //     document.querySelector("#icon").src = "https://openweathermap.org/img/wn/" + icon + ".png";
+        //     document.querySelector("#description").innerText = description;
+        //     document.querySelector("#humidity").innerText = "Humidity: " + humidity + "%";
+        //     document.querySelector("#wind").innerText = "Wind Speed: " + speed + "km/h";
+        //   }
+        
+        // }; -->
+
+        /* WEATHER CARD CSS */
+
+/* .weather-card {
+  margin: 20px;
+} */
+
+/* SEARCH BUTTON ICON */
+/* #search-button {
+  width: 1.8em;
+  height: 1.8em;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#search-button:hover{
+  background: #3feee6;
+  transition: 0.2s ease-in-out;
+} */
+
+/* WEATHER SEARCH DIV */
+/* .weather-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* WEATHER SEARCH BAR */
+/* #search-bar{
+  border-radius: 25px;
+  height: 1.8em;
+  width: 15em;
+  padding: 0.8em;
+  cursor: pointer;
+} */
+
+/* WEATHER INFORMATION DIV */
+
+/* .temp-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -5px;
+}
+
+
+
+.weather-container{
+  background: #cafafe;
+  border-radius: 10px;
+  height: 300px;
+  padding: 3em;
+  margin-bottom: 20px;
+  border: 1px solid grey;
+  width: 100%;
+  max-width: 700px;
+} */
