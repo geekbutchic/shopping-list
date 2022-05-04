@@ -20,7 +20,7 @@ function inputDigit(digit) {
 //HANDLES DECIMAL
 function inputDecimal(dot) {
   if (calculator.waitingForSecondOperand === true) {
-    calculator.displayValue = "0.0";
+    calculator.displayValue = "0.";
     calculator.waitingForSecondOperand = false;
     return;
   }
