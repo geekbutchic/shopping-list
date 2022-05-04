@@ -141,8 +141,10 @@ h3 {
   margin-right: auto;
 }
 
-.icon {
-  margin-left: 130px;
+div.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h2.city {
