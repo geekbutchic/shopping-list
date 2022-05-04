@@ -20,7 +20,7 @@ function inputDigit(digit) {
 //HANDLES DECIMAL
 function inputDecimal(dot) {
   if (calculator.waitingForSecondOperand === true) {
-    calculator.displayValue = "0.";
+    calculator.displayValue = "0.0";
     calculator.waitingForSecondOperand = false;
     return;
   }
@@ -29,7 +29,7 @@ function inputDecimal(dot) {
     calculator.displayValue += dot;
   }
 }
-// PROCESS OPERATORS THAT ARE CLICKED
+// PROCESSES OPERATORS THAT ARE CLICKED
 function handleOperator(nextOperator) {
   const { firstOperand, displayValue, operator } = calculator;
   const inputValue = parseFloat(displayValue);

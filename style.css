@@ -50,20 +50,24 @@ html {
   color: white;
 }
 
-/* SHOPPING LIST */
+/* SHOPPING LIST CSS */
 .item-row {
   display: flex;
   width: 100%;
   margin: 5px 0;
 }
+
 .item-name {
   width: 60%;
 }
+
 .item-name.item-got {
   background: #cafafe;
 }
+
 .item-name.item-got:before {
   content: "\02713";
+  /* content: "\02611"; */
   margin-right: 5px;
   font-weight: bolder;
   color: #19d14a;
@@ -83,7 +87,7 @@ html {
   font-size: 23px;
 }
 
-/* ADD ITEM */
+/* ADD ITEM CSS */
 #shop-item {
   width: 75%;
   cursor: pointer;
@@ -122,6 +126,7 @@ h3 {
   padding-bottom: 30px;
 }
 
+/* WEATHER CARD CSS */
 .search-bar {
   margin-top: 20px;
 }
@@ -168,7 +173,7 @@ div.card {
   border: 1px solid grey;
 }
 
-
+/* CALCULATOR CSS */
 .calculator {
   margin-top: 20px;
   display: grid;

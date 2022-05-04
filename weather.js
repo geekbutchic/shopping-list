@@ -1,6 +1,8 @@
 let weather = {
+    //ATTACHES KEY FROM URL TO API-KEY.JS FILE
     apiKey: URL,
     fetchWeather: function (city) {
+      //FORMAT FOR FETCHING WEATHER FORM API 
       fetch(
         "https://api.openweathermap.org/data/2.5/weather?q=" +
           city +
@@ -46,4 +48,4 @@ let weather = {
       }
     });
   
-  weather.fetchWeather("Denver");
+  weather.fetchWeather("Scottsdale");
