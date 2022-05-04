@@ -7,12 +7,12 @@ let weather = {
           "&units=imperial&appid=" +
           this.apiKey
       )
-        .then((response) => {
-          if (!response.ok) {
+        .then((res) => {
+          if (!res.ok) {
             alert("No weather found.");
             throw new Error("No weather found.");
           }
-          return response.json();
+          return res.json();
         })
         .then((data) => this.displayWeather(data));
     },

@@ -107,8 +107,3 @@ const shoppingList = {
 };
 
 window.addEventListener("DOMContentLoaded", shoppingList.initiate);
-
-
-
-
-
